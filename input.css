@@ -125,6 +125,7 @@ nav {
 .text-sec {
   display: grid;
   align-content: center;
+  justify-content: center;
 }
 footer {
   position: absolute;
