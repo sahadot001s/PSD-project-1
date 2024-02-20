@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Montserrat+Subrayada:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Seaweed+Script&display=swap');
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: #f1e5d9;
+  overflow: hidden;
+  height: 100vh;
+}
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+/* ======================= */
+main {
+  position: relative;
+}
+.wrap {
+  width: 96%;
+  margin: auto;
+}
+nav {
+  margin-top: 35px;
+  display: grid;
+  grid-template-columns: 30% 50% 20%;
+  align-items: start;
+}
+.list-item {
+  padding-top: 7px;
+  position: relative;
+}
+.list-item ul li {
+  display: inline-block;
+  margin-right: 35px;
+}
+.list-item ul li a {
+  color: #000;
+  font-weight: 500;
+  font-size: 14px;
+}
+.phone {
+  text-align: right;
+  padding-right: 20px;
+}
+.phone p span {
+  font-weight: 600;
+}
+.sec-wrap {
+  height: 90vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 15px;
+}
+.img-boxes img {
+  width: 100%;
+  height: 93vh;
+  object-fit: contain;
+  object-position: bottom;
+  transform: scaleX(-1);
+}
+.text-box-1 {
+  position: relative;
+  padding-left: 130px;
+}
+.text-box-1 span {
+  font-size: 32px;
+  font-weight: 300;
+}
+.text-box-1 h1 {
+  font-size: 90px;
+  line-height: 78px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.text-box-1 p {
+  color: #d49556;
+  font-size: 90px;
+  font-weight: 600;
+  font-style: italic;
+  position: absolute;
+  top: 93px;
+  left: 172px;
+  transform: rotate(-19deg);
+  font-family: "Italianno", cursive;
+  font-size: 136px;
+}
+.text-box-2 {
+  margin-top: 45px;
+}
+.text-box-2 h2 {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  font-size: 40px;
+  text-align: right;
+  font-weight: 800;
+  letter-spacing: 2px;
+  line-height: 32px;
+  padding: 10px 12px;
+  height: 85px;
+}
+.text-box-2 h3 {
+  display: inline-block;
+  background: #e4c09d;
+  font-size: 40px;
+  line-height: 32px;
+  height: 85px;
+  padding: 10px 12px;
+  margin-left: -4px;
+  font-weight: 800;
+}
+.text-box-2 h2 span {
+  font-size: 35px;
+}
+.text-sec {
+  display: grid;
+  align-content: center;
+}
+footer {
+  position: absolute;
+  bottom: 140px;
+  right: 3%;
+  width: 50%;
+  text-align: right;
+}
+footer p {
+  display: inline-block;
+  margin-right: 120px;
+  font-size: 13px;
+}
+footer .icons {
+  display: inline-block;
+}
+.icons i {
+  background: #d49556;
+  color: #fff;
+  padding: 10px;
+  border-radius: 50px;
+  font-size: 15px;
+  margin: 0px 2px;
+}
+.icons i.fa-brands.fa-instagram {
+  font-size: 16px;
+}
+.icons i.fa-brands.fa-whatsapp {
+  font-size: 16px;
+}
+i.fa-brands.fa-facebook-f {
+  padding: 10px 12px;
+}
+.corner-bg {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: #fff;
+  right: -40px;
+  top: -114px;
+  z-index: -1;
+  border-radius: 60%;
+}
+.img-sec {
+  position: relative;
+}
+.bg-under {
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  background: #e4c09d;
+  border-radius: 70%;
+  left: 14.5%;
+  top: 13%;
+}
+.list-bg {
+  position: absolute;
+  width: 90px;
+  height: 120px;
+  background-image: linear-gradient(white, #ffffff00);
+  top: -60px;
+  left: -24px;
+  z-index: -1;
+}
