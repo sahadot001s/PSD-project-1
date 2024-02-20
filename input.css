@@ -24,6 +24,7 @@ a {
 /* ======================= */
 main {
   position: relative;
+  overflow: hidden;
 }
 .wrap {
   width: 96%;
@@ -129,7 +130,7 @@ nav {
 }
 footer {
   position: absolute;
-  bottom: 140px;
+  bottom: 8%;
   right: 3%;
   width: 50%;
   text-align: right;
