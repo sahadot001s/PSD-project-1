@@ -178,5 +178,10 @@ footer p {
   background: #e59854;
   color: #fff;
   padding: 10px;
-  clip-path: circle();
+  font-size: 15px;
+  display: inline-block;
+  border-radius: 37px;
+}
+i.fa-brands.fa-facebook-f {
+  padding: 10px 12px;
 }
