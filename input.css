@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Montserrat+Subrayada:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Seaweed+Script&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Italianno&family=Montserrat+Subrayada:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Seaweed+Script&display=swap");
 body {
   margin: 0px;
   padding: 0px;
@@ -20,7 +20,7 @@ a {
   text-decoration: none;
 }
 /* ======================= */
-.wrap{
+.wrap {
   max-width: 1400px;
   min-width: 990px;
   height: 100%;
@@ -85,7 +85,7 @@ nav {
 .bg-under {
   width: 500px;
   height: 450px;
-  background: #F1C19D;
+  background: #f1c19d;
   clip-path: circle();
   position: absolute;
   bottom: 95px;
@@ -134,7 +134,7 @@ nav {
   transform: rotate(-32deg);
   bottom: -70px;
   right: 70px;
-  color: #E59852;
+  color: #e59852;
   font-family: "Italianno", cursive;
 }
 .text-box-2 {
@@ -156,7 +156,27 @@ nav {
   font-size: 60px;
   font-weight: 800;
   line-height: 48px;
-  background: #EFC2A4;
+  background: #efc2a4;
   padding: 12px 14px;
 }
 
+footer {
+  position: absolute;
+  bottom: 50px;
+  right: 30px;
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+footer p {
+  margin-right: 35px;
+  font-size: 14px;
+  color: #000;
+}
+.icons i {
+  background: #e59854;
+  color: #fff;
+  padding: 10px;
+  clip-path: circle();
+}
