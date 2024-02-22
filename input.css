@@ -44,9 +44,18 @@ nav {
 }
 .list-item {
   padding-top: 8px;
+  position: relative;
 }
 .list-item ul li:last-child {
   margin-right: 0px !important;
+}
+.list-bg {
+  position: absolute;
+  width: 90px;
+  height: 120px;
+  background-image: linear-gradient(180deg, white, transparent);
+  left: -26px;
+  top: -55px;
 }
 .phone {
   text-align: right;
