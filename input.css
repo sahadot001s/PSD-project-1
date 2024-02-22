@@ -5,8 +5,6 @@ body {
   padding: 0px;
   box-sizing: border-box;
   background-color: #f1e5d9;
-  overflow: hidden;
-  height: 100vh;
 }
 * {
   font-family: "Montserrat", sans-serif;
@@ -22,172 +20,228 @@ a {
   text-decoration: none;
 }
 /* ======================= */
-main {
-  position: relative;
-  overflow: hidden;
-}
-.wrap {
-  width: 96%;
+.wrap{
+  max-width: 1400px;
+  min-width: 990px;
+  height: 100%;
   margin: auto;
+  padding: 0px 30px;
+}
+main {
+  overflow: hidden;
+  position: relative;
+  padding-top: 30px;
+  height: 100vh;
 }
 nav {
-  margin-top: 35px;
   display: grid;
-  grid-template-columns: 30% 50% 20%;
-  align-items: start;
-}
-.list-item {
-  padding-top: 7px;
-  position: relative;
+  grid-template-columns: 360px auto auto;
 }
 .list-item ul li {
   display: inline-block;
-  margin-right: 35px;
+  padding-top: 5px;
+  margin-right: 50px;
 }
-.list-item ul li a {
-  color: #000;
-  font-weight: 500;
-  font-size: 14px;
+.list-item {
+  padding-top: 8px;
+}
+.list-item ul li:last-child {
+  margin-right: 0px !important;
 }
 .phone {
   text-align: right;
-  padding-right: 20px;
 }
 .phone p span {
+  font-weight: 500;
+}
+.list-item ul li a {
+  font-size: 14px;
   font-weight: 600;
+  color: #000;
+}
+.corner-bg {
+  position: fixed;
+  width: 150px;
+  height: 150px;
+  background: #fff;
+  clip-path: circle();
+  right: -13px;
+  top: -66px;
+  z-index: -1;
+}
+.phone p {
+  font-weight: 400;
 }
 .sec-wrap {
-  height: 90vh;
   display: grid;
-  grid-template-columns: 50% 50%;
-  grid-gap: 15px;
+  grid-template-columns: 655px auto;
+  height: 100%;
+  align-items: center;
+}
+.img-sec {
+  position: relative;
+  height: 100%;
+}
+.bg-under {
+  width: 500px;
+  height: 450px;
+  background: #F1C19D;
+  clip-path: circle();
+  position: absolute;
+  bottom: 95px;
+  left: 80px;
+  z-index: -1;
+}
+.img-boxes {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
 }
 .img-boxes img {
-  width: 100%;
-  height: 93vh;
+  width: 585px;
+  height: 100%;
+  transform: scaleX(-1);
   object-fit: contain;
   object-position: bottom;
-  transform: scaleX(-1);
+  padding-bottom: 55px;
+}
+.text-sec {
+  height: 100%;
+  display: grid;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
 }
 .text-box-1 {
+  margin-bottom: 50px;
   position: relative;
-  padding-left: 130px;
+  margin-left: 243px;
 }
 .text-box-1 span {
-  font-size: 32px;
-  font-weight: 300;
+  font-size: 36px;
+  font-weight: 400;
 }
 .text-box-1 h1 {
-  font-size: 90px;
-  line-height: 78px;
+  font-size: 100px;
+  line-height: 95px;
   text-transform: uppercase;
   font-weight: 900;
 }
 .text-box-1 p {
-  color: #d49556;
-  font-size: 90px;
-  font-weight: 600;
-  font-style: italic;
   position: absolute;
-  top: 93px;
-  left: 172px;
-  transform: rotate(-19deg);
+  font-size: 150px;
+  font-weight: 900;
+  transform: rotate(-32deg);
+  bottom: -70px;
+  right: 70px;
+  color: #E59852;
   font-family: "Italianno", cursive;
-  font-size: 136px;
 }
 .text-box-2 {
-  margin-top: 45px;
+  display: flex;
 }
 .text-box-2 h2 {
-  display: inline-block;
+  font-size: 60px;
+  font-weight: 800;
+  text-align: right;
+  line-height: 48px;
+  padding: 12px 14px;
   background: #000;
   color: #fff;
-  font-size: 40px;
-  text-align: right;
-  font-weight: 800;
-  letter-spacing: 2px;
-  line-height: 32px;
-  padding: 10px 12px;
-  height: 85px;
-}
-.text-box-2 h3 {
-  display: inline-block;
-  background: #e4c09d;
-  font-size: 40px;
-  line-height: 32px;
-  height: 85px;
-  padding: 10px 12px;
-  margin-left: -4px;
-  font-weight: 800;
 }
 .text-box-2 h2 span {
-  font-size: 35px;
+  font-size: 50px;
+}
+.text-box-2 h3 {
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 48px;
+  background: #EFC2A4;
+  padding: 12px 14px;
+}
+
+
+/* ========================================== 
+Responsive
+============================================ */
+@media only screen and (min-width: 1700px){
+  .text-box-1 span {
+    font-size: 28px;
+}
+.text-box-1 h1 {
+    font-size: 80px;
+    line-height: 72px;
+}
+.text-box-1 p {
+    font-size: 125px;
+}
+.text-box-2 h2 {
+    font-size: 48px;
+}
+.text-box-2 h2 span {
+    font-size: 40px;
+    line-height: 42px;
+}
+.text-box-2 h3 {
+    font-size: 48px;
+    line-height: 48px;
+}
+.text-box-1 {
+    margin-bottom: 30px;
+    margin-left: 195px;
+    margin-top: 60px;
 }
 .text-sec {
-  display: grid;
-  align-content: center;
-  justify-content: center;
+    margin-bottom: 110px;
 }
-footer {
-  position: absolute;
-  bottom: 8%;
-  right: 3%;
-  width: 50%;
-  text-align: right;
+.img-boxes img {
+    width: 500px;
 }
-footer p {
-  display: inline-block;
-  margin-right: 120px;
-  font-size: 13px;
-}
-footer .icons {
-  display: inline-block;
-}
-.icons i {
-  background: #d49556;
-  color: #fff;
-  padding: 10px;
-  border-radius: 50px;
-  font-size: 15px;
-  margin: 0px 2px;
-}
-.icons i.fa-brands.fa-instagram {
-  font-size: 16px;
-}
-.icons i.fa-brands.fa-whatsapp {
-  font-size: 16px;
-}
-i.fa-brands.fa-facebook-f {
-  padding: 10px 12px;
-}
-.corner-bg {
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  background: #fff;
-  right: -40px;
-  top: -114px;
-  z-index: -1;
-  border-radius: 60%;
-}
-.img-sec {
-  position: relative;
+.img-boxes {
+    text-align: center;
 }
 .bg-under {
-  position: absolute;
-  width: 700px;
-  height: 700px;
-  background: #e4c09d;
-  border-radius: 70%;
-  left: 14.5%;
-  top: 13%;
+    left: 95px;
+    bottom: 65px;
 }
-.list-bg {
-  position: absolute;
-  width: 90px;
-  height: 120px;
-  background-image: linear-gradient(white, #ffffff00);
-  top: -60px;
-  left: -24px;
-  z-index: -1;
 }
+/* ==========================================
+
+===========================================*/
+@media only screen and (min-width: 1400px) {
+  .img-boxes img {
+    width: 450px;
+}
+.bg-under {
+    width: 500px;
+    height: 355px;
+    left: 130px;
+}
+.text-box-1 h1 {
+    font-size: 70px;
+    line-height: 60px;
+}
+.text-box-1 {
+    margin-left: 138px;
+}
+.text-box-1 span {
+    font-size: 28px;
+}
+.text-box-1 p {
+    font-size: 120px;
+    left: 15px;
+}
+.text-box-2 h2 {
+    font-size: 40px;
+    line-height: 38px;
+    padding: 12px 12px 8px 12px;
+}
+.text-box-2 h2 span {
+    font-size: 35px;
+}
+.text-box-2 h3 {
+    font-size: 40px;
+    line-height: 40px;
+    padding: 12px 12px 8px 12px;
+}
+} 
